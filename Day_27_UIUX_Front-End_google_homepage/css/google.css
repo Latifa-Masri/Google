@@ -1,87 +1,212 @@
- 
-#acc-img{
-    
-    border-radius:50% ;
-}
-.header-right{
-    float:right;
-    
+body {
+    font-family: Arial, sans-serif;
 }
 
-.header-left{
-    float:left;
+#acc-img,
+#mic {
+    border-radius: 50%;
 }
+
+.header-left a,
+.header-right a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.header-right {
+    float: right;
+    /* top: -30px; */
+}
+
+.header-left {
+    float: left;
+}
+
+.header-left a:hover,
+.header-right a:hover {
+    text-decoration: underline;
+}
+
 header {
-  width: 100%;
+    top: 0%;
+    width: 100%;
 }
-li{
+
+nav>ul>li {
+    display: inline-flex;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 7px;
+    position: relative;
+}
+
+section {
+    text-align: center;
+    position: relative;
+}
+
+#google_logo {
+    text-align: center;
+    width: 400px;
+    margin: 0;
+    margin-top: 50px;
+    clear: both;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    margin-left: 187px;
+}
+
+.google-logo {
+    margin: 0px;
+    padding: 0px;
+    /* margin-top: 100px; */
+}
+
+.input-wrapper>img {
+    position: absolute;
+    width: 20px;
+    right: 0px;
+    top: 7px;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 582px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0px;
+}
+
+#form-search {
+    padding: 0 8px;
+    border-style: outset;
+    width: 582px;
+    height: 50px;
+    color: #222;
+    border: 1px solid #dfe1e5;
+    font-size: 14px;
+    border-radius: 24px;
+    outline: none;
+}
+
+#form-search:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(233, 255, 229, 0);
+}
+
+#form-search:focus {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(233, 255, 229, 0);
+}
+
+.buttons {
+    /* background-color: #f2f2f2; */
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 582px;
+    /* position: relative; */
+    border: none;
+    font-size: 14px;
+}
+
+.btn {
+    outline: none;
+    border-radius: 5px;
+    background-color: linear-gradient(top, #f5f5f5, #ff11ff);
+    border: 1px solid transparent;
+    /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0); */
+    padding: 10px;
+}
+
+.btn:hover {
+    background-color: linear-gradient(top, #f5f5f5, #ff11ff);
+    border: 1px solid #000;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.btn:first-of-type {
+    margin-right: 16px;
+}
+
+#app-dropdown {
+    width: 250px;
+    padding: 25px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    top: 23px;
+    position: absolute;
+    right: 4px;
+}
+
+#apps {
     display: inline-block;
-     padding: 8px;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
- #google_logo {
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  clear: both;
-  padding-top: 40px;
-  padding-bottom: 0px;
-}
-.form {
-  text-align: center;
+    position: relative;
 }
 
-#form-search { 
-  width: 450px;
-  line-height: 32px;
-  padding: 20px 10px;
-  
+#apps:hover #app-dropdown {
+    display: block;
 }
 
-.form #form-search {
-  padding: 0 8px;
-  border-style: outset;
-}
-footer  {
-  background: #f2f2f2;
-  border-top: solid 2px #e4e4e4;
-  bottom: 0;
-  padding-bottom: 0;
-  width: 100%;
-  
+.app-item {
+    display: inline-block;
+    width: 80px;
+    margin-bottom: 18px;
 }
 
-footer ul li {
-  display: inline;
-  color: #666666;
-  font-size: 14px;
-  padding: 13px;
+.app-item>img {
+    width: 50px;
+    height: 50px;
 }
 
-footer ul {
-  float: left;
-  padding: 1px;
+.app-item>p {
+    color: rgba(0, 0, 0, 0.87);
+    margin: 0px;
+    padding: 2px 8px;
+}
+
+.app-item:hover {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    ;
+}
+
+footer {
+    position: fixed;
+    padding: -5px;
+    background: #f2f2f2;
+    border-top: solid 2px #e4e4e4;
+    bottom: 0;
+    padding: 0;
+    width: 100%;
+}
+
+footer ul li a {
+    color: #666666;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-left {
+    float: left;
 }
 
 .footer-right {
-  float: right;
+    float: right;
 }
 
- #form-search {
-    width: 800px;
-    height: 50px;
-    border: 1px solid ;
-    margin: 8px auto;
-    display: block;
+footer ul li {
+    display: inline-flex;
 }
-  
-.buttons {
-  text-align: center;
-  padding-top: 30px;
-  margin-bottom: 50px;
-  border: none;
-  font-size: 30px;
+
+li {
+    list-style: none;
+    margin: 0 5px;
+}
+
+.footer-left a:hover,
+.footer-right a:hover {
+    text-decoration: underline;
 }
